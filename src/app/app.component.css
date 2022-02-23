@@ -1,0 +1,8 @@
+.welcome {
+    display: flex;
+    justify-content: center;
+}
+
+.welcome h1 :hover {
+    color: red;
+}
