@@ -108,9 +108,12 @@ export class ParentComponent implements OnInit {
 
   arrange() {
     let formatTariff = [];
-    console.log('groupnames');
-    let a = this.m2m.splice(0, 2);
-    console.log('sliced aray', a);
+    let zone = this.m2m.map((zone => zone.zone));
+    let y = [...new Set(this.m2m.map((zone) => zone.zone))];
+
+    const mapped = this.m2m.map(item => Object.assign(item, { price: (item.network_code) }));
+    console.log('mapped', mapped);
+
 
 
   }
