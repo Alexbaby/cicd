@@ -1,6 +1,6 @@
 <h3 style="text-align: center;">{{value}}</h3>
 <form>
-  <input type="button" value="submit" (click)="arrange()">
+  <input type="button"[name]="89" value="submit" (click)="arrange()">
   <router-outlet></router-outlet>
   <app-child (open)="onOpen($event)"></app-child>
 </form>
