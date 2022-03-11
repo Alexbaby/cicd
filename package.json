@@ -7,8 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "test:ci":"ng test --watch=false browser=chromeHeadless",
-    "build:ci":"ng build --prod"
+    "test:ci": "ng test --watch=false browser=chromeHeadless",
+    "build:ci": "ng build --prod"
   },
   "private": true,
   "dependencies": {
@@ -21,6 +21,7 @@
     "@angular/platform-browser-dynamic": "~12.1.0-",
     "@angular/router": "~12.1.0-",
     "@types/lodash": "^4.14.178",
+    "cypress": "^9.5.1",
     "loadash": "^1.0.0",
     "lodash": "^4.17.21",
     "rxjs": "~6.6.0",
